@@ -1,0 +1,90 @@
+Nov 25, 2022
+Developer: Gaurav
+class Human{
+	int age;
+	String name;
+	float weight;
+	String bloodGroup;
+	//walk(), eat(), sleep() & run()
+}
+Developer: Harit
+class Student{
+	int age;
+	String name;
+	float weight;
+	String bloodGroup;
+	//walk(), eat(), sleep() & run()
+	int rollNo;
+	double percentage;
+	//admission(), result(), attendance();	
+}
+Developer: Gaurav
+class SchoolStudent{
+	int age;
+	String name;
+	float weight;
+	String bloodGroup;
+	//walk(), eat(), sleep() & run()	
+	int rollNo;
+	double percentage;
+	//admission(), result(), attendance();	
+	String board;
+	String uniformColor;
+	//registration(), halfYearsExams()
+}
+super class: P
+sub class: Q
+P: default Const
+Q: default Const
+order of constructor calling: P -> Q
+constrctor calling is implicit
+P: default Const
+Q: parameterized Const
+order of constructor calling: P -> Q
+constrctor calling is implicit
+P: parameterized Const
+use super keyword to call parameterized constructor
+class A{
+	void show(){
+		...
+	}
+}
+class B extends A{
+	void show(){
+		...
+	}
+}
+class B has overridden the show() method of class A.
+class Cat{
+	void food(){
+		milk, small animal, chapati
+	}
+}
+class Tiger extends Cat{
+	@override
+	void food(){
+		big animals
+	}
+}
+//by M.R.
+final class User{
+	boolean login(String username, String password){
+		...
+	}
+}
+//by Shubham
+class MalUser extends User{//Error
+}
+ABC a1 = new ABC();
+ABC a2 = new ABC();
+ABC a3 = a2;
+stack    heap
+|7654|   |_10_|_20_|
+ a1       i   j  7654
+|9876|   |_10_|_20_|
+ a2       i   j  9876
+|9876|
+a3
+a1.equals(a2);	//false
+a2.equals(a3);	//true
+a3.equals(a1);	//false
